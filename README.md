@@ -1,16 +1,22 @@
-MLB Best Hitter by Ballpark
+# MLB Best Hitter by Ballpark
 
-Project Overview
+---
+
+**Project Overview**
 
 This project analyzes MLB at-bat data to identify the best single-game hitting performance at each ballpark using a custom scoring metric.
 
 The goal is to transform raw at-bat data into meaningful insights by aggregating player performance and ranking outcomes across stadiums.
 
-Objective
+---
+
+**Objective**
 
 Determine which batter had the best single-game performance at each MLB ballpark.
 
-Data
+---
+
+**Data**
 
 - Source: Sample of 2018 MLB Statcast-style data  
 - Tables used:
@@ -20,7 +26,9 @@ Data
 
 Each row in the dataset represents a single at-bat.
 
-Methodology
+---
+
+**Methodology**
 
 1. Data Extraction
 
@@ -51,9 +59,11 @@ Rationale:
 
 - Ranked batter-game performances by performance_points  
 - Grouped by venue_name (ballpark)  
-- Selected the top performance per ballpark  
+- Selected the top performance per ballpark
 
-Results
+---
+
+**Results**
 
 The final output includes:
 
@@ -65,26 +75,30 @@ The final output includes:
 
 This identifies the top offensive performance at each stadium in the dataset.
 
-Key Insights
+**Key Insights**
 
 - Power hitters dominate the top performances due to the scoring model  
 - Multi-home run games consistently rank among the highest performances  
 - Variation across ballparks is present, though influenced by the limited sample size  
 
-Limitations
+**Limitations**
 
 - Dataset includes only a subset of games from the 2018 season  
 - Results are illustrative rather than comprehensive  
-- Ballpark-specific trends are not fully captured due to limited data  
+- Ballpark-specific trends are not fully captured due to limited data
 
-Tech Stack
+---
+
+**Tech Stack**
 
 - Python (pandas)  
 - SQL (PostgreSQL)  
 - SQLAlchemy  
-- Jupyter Notebook  
+- Jupyter Notebook
 
-How to Run
+---
+
+**How to Run**
 
 1. Clone the repository:
 
@@ -110,24 +124,26 @@ DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=your_database
 
-5. Launch the notebook:
+5. Launch the notebook
 
-jupyter notebook
+---
 
-Key Learnings
+**Key Learnings**
 
 - Using groupby and aggregation to transform data grain  
 - Ranking within groups using sorting and selection  
 - Feature engineering to create meaningful performance metrics  
 - Managing database connections with SQLAlchemy and environment variables  
 
-Future Improvements
+**Future Improvements**
 
 - Expand to a full-season dataset  
 - Incorporate advanced metrics (e.g., total bases, OPS)  
 - Add visualizations of performance by ballpark  
-- Compare player performance across different environments  
+- Compare player performance across different environments
 
-Author
+---
+
+**Author**
 
 Spencer Willard
